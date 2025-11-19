@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantel Docente — Colegio Gran Mariscal de Ayacucho de Catavi</title>
+    <meta name="description" content="Conoce a los docentes del Colegio Gran Mariscal de Ayacucho de Catavi.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+ .corner-globe {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0.6;
+    filter: drop-shadow(0 0 5px rgba(34, 197, 94, 0.5));
+}
+
+#globe-tr {
+    top: 20px;
+    right: 20px;
+}
+
+#globe-bl {
+    bottom: 20px;
+    left: 20px;
+}
+
+.card-3d-container {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    /* FONDO AZUL OSCURO */
+    background: #1a293c; 
+}
+    </style>
+</head>
+<body>
+    
+    <div id="globe-tr" class="corner-globe"></div>
+    <div id="globe-bl" class="corner-globe"></div>
+    
+    <header>
+        <div class="navbar" role="navigation" aria-label="Navegación principal">
+            <div class="logo">
+                <span>🎓</span>
+                <span>U.E. Ayacucho</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="materias3d.html">Materias</a></li>
+                    <li><a href="infraestructura-3d.html">Infraestructura 3D</a></li>
+                    <li><a href="plantel-docente.html" aria-current="page">Plantel Docente</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero" aria-label="Plantel Docente">
+            <h1>Nuestro Plantel Docente</h1>
+            <p>Profesionales comprometidos con la formación integral y el desarrollo de nuestros estudiantes.</p>
+        </section>
+        
+        <section>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-3d-container" id="profesor-1"></div>
+                    <h3>Prof. Andrea Rivas</h3>
+                    <div class="card-meta">Biología (Normal Superior)</div>
+                    <p>Profesora con Postgrado en Biología Molecular. 12 años de experiencia. Coordinadora del Club de Ecología.</p>
+                    <p>"La vida es la fórmula química más fascinante."</p>
+                    <p class="card-actions"><strong>Email:</strong> <a href="mailto:a.rivas@colegioayacucho-catavi.edu.bo">a.rivas@colegioayacucho-catavi.edu.bo</a></p>
+                </article>
+
+                <article class="card">
+                    <div class="card-3d-container" id="profesor-2"></div>
+                    <h3>Prof. Sergio Núñez</h3>
+                    <div class="card-meta">Matemática (Normal Superior)</div>
+                    <p>Profesor especializado en cálculo y álgebra avanzada. 8 años dedicado a la enseñanza lógica.</p>
+                    <p>"Un lenguaje para entender el universo."</p>
+                    <p class="card-actions"><strong>Email:</strong> <a href="mailto:s.nunez@colegioayacucho-catavi.edu.bo">s.nunez@colegioayacucho-catavi.edu.bo</a></p>
+                </article>
+                
+                <article class="card">
+                    <div class="card-3d-container" id="profesor-3"></div>
+                    <h3>Prof. Claudia Mendoza</h3>
+                    <div class="card-meta">Ciencias Sociales (Normal Superior)</div>
+                    <p>Historiadora y Socióloga de formación docente. 15 años de dedicación a la investigación social.</p>
+                    <p>"Conocer la historia es entender quiénes somos."</p>
+                    <p class="card-actions"><strong>Email:</strong> <a href="mailto:c.mendoza@colegioayacucho-catavi.edu.bo">c.mendoza@colegioayacucho-catavi.edu.bo</a></p>
+                </article>
+                
+                <article class="card">
+                    <div class="card-3d-container" id="profesor-4"></div>
+                    <h3>Prof. Rubén Quiroga</h3>
+                    <div class="card-meta">Ciencias Naturales (Normal Superior)</div>
+                    <p>Profesor especializado en Geología y Medio Ambiente. 20 años de servicio docente. Tutor de ciclo.</p>
+                    <p>"Nuestro planeta tiene una historia increíble."</p>
+                    <p class="card-actions"><strong>Email:</strong> <a href="mailto:r.quiroga@colegioayacucho-catavi.edu.bo">r.quiroga@colegioayacucho-catavi.edu.bo</a></p>
+                </article>
+                
+                <article class="card">
+                    <div class="card-3d-container" id="profesor-5"></div>
+                    <h3>Prof. Javier Ramos</h3>
+                    <div class="card-meta">Física (Normal Superior)</div>
+                    <p>Profesor de Física con enfoque teórico. 3 años de experiencia. Utiliza realidad virtual en las aulas.</p>
+                    <p>"La ciencia es la explicación de la magia."</p>
+                    <p class="card-actions"><strong>Email:</strong> <a href="mailto:j.ramos@colegioayacucho-catavi.edu.bo">j.ramos@colegioayacucho-catavi.edu.bo</a></p>
+                </article>
+                
+                <article class="card">
+                    <div class="card-3d-container" id="profesor-6"></div>
+                    <h3>Prof. Elena Vargas</h3>
+                    <div class="card-meta">Química (Normal Superior)</div>
+                    <p>Profesora con Postgrado en Química. 18 años de trayectoria. Enfoque en experimentación segura.</p>
+                    <p>"Aprender a transformar la materia y el pensamiento."</p>
+                    <p class="card-actions"><strong>Email:</strong> <a href="mailto:e.vargas@colegioayacucho-catavi.edu.bo">e.vargas@colegioayacucho-catavi.edu.bo</a></p>
+                </article>
+                
+                <article class="card">
+                    <div class="card-3d-container" id="profesor-7"></div>
+                    <h3>Prof. Daniel Soto</h3>
+                    <div class="card-meta">Educación Física (Normal Superior)</div>
+                    <p>Profesor especialista en Fisioterapia. 10 años promoviendo el deporte y el bienestar integral.</p>
+                    <p>"El trabajo en equipo es la regla de oro."</p>
+                    <p class="card-actions"><strong>Email:</strong> <a href="mailto:d.soto@colegioayacucho-catavi.edu.bo">d.soto@colegioayacucho-catavi.edu.bo</a></p>
+                </article>
+
+                <article class="card">
+                    <div class="card-3d-container" id="profesor-8"></div>
+                    <h3>Prof. Lucía Pérez</h3>
+                    <div class="card-meta">Educación Musical (Normal Superior)</div>
+                    <p>Profesora de Música y directora de la orquesta escolar. 7 años creando armonía en el aula.</p>
+                    <p>"Encontrando el ritmo, encontramos la concentración."</p>
+                    <p class="card-actions"><strong>Email:</strong> <a href="mailto:l.perez@colegioayacucho-catavi.edu.bo">l.perez@colegioayacucho-catavi.edu.bo</a></p>
+                </article>
+                
+                <article class="card">
+                    <div class="card-3d-container" id="profesor-9"></div>
+                    <h3>Prof. Rosaura Flores</h3>
+                    <div class="card-meta">Artes Plásticas (Normal Superior)</div>
+                    <p>Profesora Artista con 14 años enseñando dibujo, escultura y arte digital.</p>
+                    <p>"Tu creatividad es tu mejor herramienta."</p>
+                    <p class="card-actions"><strong>Email:</strong> <a href="mailto:r.flores@colegioayacucho-catavi.edu.bo">r.flores@colegioayacucho-catavi.edu.bo</a></p>
+                </article>
+
+                <article class="card">
+                    <div class="card-3d-container" id="profesor-10"></div>
+                    <h3>Prof. Carlos Loza</h3>
+                    <div class="card-meta">Técnica y Tecnología (Normal Superior)</div>
+                    <p>Profesor experto en Robótica y Sistemas. 9 años creando soluciones tecnológicas en el taller.</p>
+                    <p>"Aprender a programar es aprender a crear."</p>
+                    <p class="card-actions"><strong>Email:</strong> <a href="mailto:c.loza@colegioayacucho-catavi.edu.bo">c.loza@colegioayacucho-catavi.edu.bo</a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div>
+            Colegio Gran Mariscal de Ayacucho de Catavi &copy; <span id="year"></span>
+        </div>
+        <div class="footer-links">
+            <span>Zona Central, Catavi, Potosí, Bolivia</span>
+            <a href="mailto:info@colegioayacucho-catavi.edu.bo">info@colegioayacucho-catavi.edu.bo</a>
+            <span>+591 2 123 4567</span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Función para crear un profesor 3D con primitivas
+    function crearProfesor(containerId, colorPrincipal, accesorios = []) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+
+        const scene = new THREE.Scene();
+        // ------------------------------------------------------------------
+        // CAMBIO: Establecer el fondo de la escena 3D a Azul Oscuro (0x1a293c)
+        scene.background = new THREE.Color(0x1a293c); 
+        // ------------------------------------------------------------------
+
+        const camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 1000);
+        camera.position.set(0, 1, 4);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        container.appendChild(renderer.domElement);
+
+        // Luces (Es importante que las luces sigan siendo blancas para iluminar bien al profesor)
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+        scene.add(ambientLight);
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        directionalLight.position.set(5, 10, 5);
+        scene.add(directionalLight);
+
+        const profesor = new THREE.Group();
+
+        // Cuerpo (cilindro)
+        const bodyGeometry = new THREE.CylinderGeometry(0.4, 0.5, 1.2, 32);
+        const bodyMaterial = new THREE.MeshPhongMaterial({ color: colorPrincipal });
+        const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
+        body.position.y = 0.6;
+        profesor.add(body);
+
+        // Cabeza (esfera)
+        const headGeometry = new THREE.SphereGeometry(0.35, 32, 32);
+        const headMaterial = new THREE.MeshPhongMaterial({ color: 0xffdbac });
+        const head = new THREE.Mesh(headGeometry, headMaterial);
+        head.position.y = 1.5;
+        profesor.add(head);
+
+        // Ojos
+        const eyeGeometry = new THREE.SphereGeometry(0.08, 16, 16);
+        const eyeMaterial = new THREE.MeshPhongMaterial({ color: 0x000000 });
+        
+        const leftEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
+        leftEye.position.set(-0.12, 1.55, 0.3);
+        profesor.add(leftEye);
+
+        const rightEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
+        rightEye.position.set(0.12, 1.55, 0.3);
+        profesor.add(rightEye);
+
+        // Sonrisa
+        const smileGeometry = new THREE.TorusGeometry(0.12, 0.02, 16, 100, Math.PI);
+        const smileMaterial = new THREE.MeshPhongMaterial({ color: 0x000000 });
+        const smile = new THREE.Mesh(smileGeometry, smileMaterial);
+        smile.position.set(0, 1.35, 0.3);
+        smile.rotation.z = Math.PI;
+        smile.rotation.x = -0.3;
+        profesor.add(smile);
+
+        // Brazos
+        const armGeometry = new THREE.CylinderGeometry(0.1, 0.1, 0.8, 16);
+        const armMaterial = new THREE.MeshPhongMaterial({ color: colorPrincipal });
+        
+        const leftArm = new THREE.Mesh(armGeometry, armMaterial);
+        leftArm.position.set(-0.55, 0.7, 0);
+        leftArm.rotation.z = 0.5;
+        profesor.add(leftArm);
+
+        const rightArm = new THREE.Mesh(armGeometry, armMaterial);
+        rightArm.position.set(0.55, 0.7, 0);
+        rightArm.rotation.z = -0.5;
+        profesor.add(rightArm);
+
+        // Manos
+        const handGeometry = new THREE.SphereGeometry(0.12, 16, 16);
+        const handMaterial = new THREE.MeshPhongMaterial({ color: 0xffdbac });
+        
+        const leftHand = new THREE.Mesh(handGeometry, handMaterial);
+        leftHand.position.set(-0.8, 0.4, 0);
+        profesor.add(leftHand);
+
+        const rightHand = new THREE.Mesh(handGeometry, handMaterial);
+        rightHand.position.set(0.8, 0.4, 0);
+        profesor.add(rightHand);
+
+        // Piernas
+        const legGeometry = new THREE.CylinderGeometry(0.15, 0.15, 0.8, 16);
+        const legMaterial = new THREE.MeshPhongMaterial({ color: 0x2c3e50 });
+        
+        const leftLeg = new THREE.Mesh(legGeometry, legMaterial);
+        leftLeg.position.set(-0.2, -0.4, 0);
+        profesor.add(leftLeg);
+
+        const rightLeg = new THREE.Mesh(legGeometry, legMaterial);
+        rightLeg.position.set(0.2, -0.4, 0);
+        profesor.add(rightLeg);
+
+        // Zapatos
+        const shoeGeometry = new THREE.BoxGeometry(0.2, 0.1, 0.3);
+        const shoeMaterial = new THREE.MeshPhongMaterial({ color: 0x000000 });
+        
+        const leftShoe = new THREE.Mesh(shoeGeometry, shoeMaterial);
+        leftShoe.position.set(-0.2, -0.85, 0.05);
+        profesor.add(leftShoe);
+
+        const rightShoe = new THREE.Mesh(shoeGeometry, shoeMaterial);
+        rightShoe.position.set(0.2, -0.85, 0.05);
+        profesor.add(rightShoe);
+
+        // Accesorios específicos
+        accesorios.forEach(acc => {
+            if (acc === 'gafas') {
+                const glassGeometry = new THREE.TorusGeometry(0.15, 0.02, 16, 100);
+                const glassMaterial = new THREE.MeshPhongMaterial({ color: 0x000000 });
+                
+                const leftGlass = new THREE.Mesh(glassGeometry, glassMaterial);
+                leftGlass.position.set(-0.15, 1.55, 0.25);
+                leftGlass.rotation.y = Math.PI / 2;
+                profesor.add(leftGlass);
+
+                const rightGlass = new THREE.Mesh(glassGeometry, glassMaterial);
+                rightGlass.position.set(0.15, 1.55, 0.25);
+                rightGlass.rotation.y = Math.PI / 2;
+                profesor.add(rightGlass);
+            }
+            
+            if (acc === 'libro') {
+                const bookGeometry = new THREE.BoxGeometry(0.2, 0.3, 0.05);
+                const bookMaterial = new THREE.MeshPhongMaterial({ color: 0x8b4513 });
+                const book = new THREE.Mesh(bookGeometry, bookMaterial);
+                book.position.set(-0.8, 0.35, 0.1);
+                book.rotation.x = 0.2;
+                profesor.add(book);
+            }
+
+            if (acc === 'tubo') {
+                const tubeGeometry = new THREE.CylinderGeometry(0.05, 0.05, 0.6, 16);
+                const tubeMaterial = new THREE.MeshPhongMaterial({ color: 0x00ff00 });
+                const tube = new THREE.Mesh(tubeGeometry, tubeMaterial);
+                tube.position.set(0.8, 0.5, 0);
+                tube.rotation.z = Math.PI / 4;
+                profesor.add(tube);
+            }
+
+            if (acc === 'balon') {
+                const ballGeometry = new THREE.SphereGeometry(0.15, 16, 16);
+                const ballMaterial = new THREE.MeshPhongMaterial({ color: 0xff6600 });
+                const ball = new THREE.Mesh(ballGeometry, ballMaterial);
+                ball.position.set(0.8, 0.4, 0);
+                profesor.add(ball);
+            }
+        });
+
+        scene.add(profesor);
+
+        // Animación
+        function animate() {
+            requestAnimationFrame(animate);
+            profesor.rotation.y += 0.005;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Responsive
+        window.addEventListener('resize', () => {
+            if (container.clientWidth > 0) {
+                camera.aspect = container.clientWidth / container.clientHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(container.clientWidth, container.clientHeight);
+            }
+        });
+    }
+
+    // Crear cada profesor con diferentes colores y accesorios
+    crearProfesor('profesor-1', 0x22c55e, ['gafas', 'libro']); // Biología - Verde
+    crearProfesor('profesor-2', 0x3b82f6, ['gafas', 'libro']); // Matemática - Azul
+    crearProfesor('profesor-3', 0xef4444, ['libro']); // Ciencias Sociales - Rojo
+    crearProfesor('profesor-4', 0x8b7355, ['libro']); // Ciencias Naturales - Marrón
+    crearProfesor('profesor-5', 0x6366f1, ['gafas']); // Física - Índigo
+    crearProfesor('profesor-6', 0xec4899, ['tubo']); // Química - Rosa
+    crearProfesor('profesor-7', 0xf59e0b, ['balon']); // Ed. Física - Naranja
+    crearProfesor('profesor-8', 0xa855f7, []); // Música - Púrpura
+    crearProfesor('profesor-9', 0x06b6d4, []); // Artes - Cyan
+    crearProfesor('profesor-10', 0x10b981, ['gafas']); // Tecnología - Verde esmeralda
+</script>
+</body>
+</html>
