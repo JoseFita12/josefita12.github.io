@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestructura 3D — Colegio Gran Mariscal de Ayacucho de Catavi</title>
+    <meta name="description" content="Recorrido 3D y galería de los ambientes del colegio: aulas, laboratorios, biblioteca, canchas y más.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar" role="navigation" aria-label="Navegación principal">
+            <div class="logo">
+                <img src="imagenes/escudoayacucho-removebg-preview.png" alt="Escudo Colegio Ayacucho" />
+                <span>U.E. Ayacucho</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="materias3d.html">Materias</a></li>
+                    <li><a href="infraestructura-3d.html" aria-current="page">Infraestructura 3D</a></li>
+                    <li><a href="plantel-docente.html">Plantel Docente</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" aria-label="Infraestructura">
+            <h1>Infraestructura y Recorrido 3D</h1>
+            <p>Conoce nuestros ambientes educativos y recorre virtualmente la Cancha de Futsal.</p>
+        </section>
+        
+        <section>
+            <h2>Visualización 3D Interactiva</h2>
+            
+            <div class="visor-3d-contenedor">
+                <div id="escena-3d-futsal"></div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+            <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+            <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+            <script src="futsal_scene.js"></script>
+            <h2>Galería de Imagenes</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Promocion 2018</h3>
+                    <img src="imagenes/imagen1.jpg" alt="Laboratorio de informática del colegio" loading="lazy">
+                    <p>Flamantes bachilleres de la gestión 2018.</p>
+                </article>
+                <article class="card">
+                    <h3>Unidad educativa ayacucho Insfraestructura antigua</h3>
+                    <img src="imagenes/ayacuchoantiguo.jpg" alt="Biblioteca del colegio" loading="lazy">
+                    <p>Sala de lectura y material bibliográfico actualizado.</p>
+                </article>
+                <article class="card">
+                    <h3>Bodas de Oro</h3>
+                    <img src="imagenes/panter.jpg" alt="Laboratorio de ciencias del colegio" loading="lazy">
+                    <p>Bodas de oro de la U.E. Ayacucho (1968-2018).</p>
+                </article>
+                <article class="card">
+                    <h3>Canchas Deportivas</h3>
+                    <img src="imagenes/recuerdos.jpg" alt="Canchas deportivas del colegio" loading="lazy">
+                    <p>Fútbol, básquet y vóley para el desarrollo físico integral.</p>
+                </article>
+                <article class="card">
+                    <h3>Nueva Infraestructura</h3>
+                    <img src="imagenes/UNIDAD EDUCATIVA1.jpg" alt="Canchas deportivas del colegio" loading="lazy">
+                    <p>Nueva infraestructura moderna y equipada Unidad Educativa Ayacucho Catavi.</p>
+                </article>
+            </div>
+            <h2>Seguridad y conectividad</h2>
+            <p>
+                Todos los ambientes cuentan con señalización, salidas de emergencia y acceso a internet. El mantenimiento es periódico y se prioriza la seguridad de estudiantes y docentes.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div>
+            Colegio Gran Mariscal de Ayacucho de Catavi &copy; <span id="year"></span>
+        </div>
+        <div class="footer-links">
+            <span>Zona Central, Catavi, Potosí, Bolivia</span>
+            <a href="mailto:info@colegioayacucho-catavi.edu.bo">info@colegioayacucho-catavi.edu.bo</a>
+            <span>+591 2 123 4567</span>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegio Gran Mariscal de Ayacucho de Catavi – Inicio</title>
+  <meta name="description" content="Sitio oficial del Colegio Gran Mariscal de Ayacucho de Catavi. Información sobre materias, infraestructura 3D, plantel docente, ubicación y contacto.">
+  <link rel="stylesheet" href="styleindex.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="imagenes/escudoayacucho-removebg-preview.png" alt="Escudo Colegio Ayacucho" />
+        <span>U.E. Ayacucho</span>
+      </div>
+      
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero con Modelo 3D Futsal y Menú Lateral -->
+    <section class="hero-3d-container">
+      <div class="visor-3d-contenedor">
+        <div id="escena-3d-futsal"></div>
+      </div>
+      
+      <div class="menu-lateral">
+        <a href="materias3d.html" class="menu-item">
+          <span class="icon">📚</span>
+          <h3>Materias</h3>
+          <p>Explora nuestro plan de estudios con modelos 3D interactivos</p>
+        </a>
+        
+        <a href="infraestructura-3d.html" class="menu-item">
+          <span class="icon">🏫</span>
+          <h3>Infraestructura 3D</h3>
+          <p>Recorre virtualmente nuestras instalaciones</p>
+        </a>
+        
+        <a href="plantel-docente.html" class="menu-item">
+          <span class="icon">👨‍🏫</span>
+          <h3>Plantel Docente</h3>
+          <p>Conoce a nuestros profesionales</p>
+        </a>
+        
+        <a href="ubicacion.html" class="menu-item">
+          <span class="icon">📍</span>
+          <h3>Ubicación</h3>
+          <p>Encuéntranos en el mapa</p>
+        </a>
+        
+      </div>
+       <p class="scene-controls">
+        💡 <strong>Controles:</strong> Arrastra para rotar • Rueda del mouse para zoom • Click derecho para mover
+      </p>
+    </section>
+
+    <!-- Aula Virtual 3D -->
+    <section class="scene-section" aria-labelledby="aula-virtual">
+      <h2 id="aula-virtual">🎓 Explora Nuestra Aula Virtual en 3D</h2>
+      <p class="scene-info">Interactúa con una representación 3D de nuestras instalaciones educativas</p>
+      
+      <div id="scene-container"></div>
+
+      <p class="scene-controls">
+        💡 <strong>Controles:</strong> Arrastra para rotar • Rueda del mouse para zoom • Click derecho para mover
+      </p>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section class="mision-vision-section">
+      <h2>Nuestra Misión y Visión</h2>
+      
+      <div class="mision-vision-grid">
+        <article class="card-mv">
+          <h3>🚀 Misión</h3>
+          <p>La misión del Colegio Gran Mariscal de Ayacucho es brindar una educación de excelencia, integral y sociocomunitaria productiva a los jóvenes de Catavi y la región. Nos comprometemos a formar estudiantes críticos, creativos y con alto sentido ético, que dominen las ciencias, las artes y las tecnologías digitales, preparándolos no solo para la educación superior, sino para ser líderes innovadores y agentes de cambio positivo en sus comunidades. Fomentamos un ambiente inclusivo que valora la diversidad cultural y promueve la participación activa en el desarrollo del país.</p>
+        </article>
+        
+        <article class="card-mv">
+          <h3>✨ Visión</h3>
+          <p>Consolidarnos como la Unidad Educativa líder en el departamento de Potosí y un referente a nivel nacional por nuestra innovación pedagógica y tecnológica. Visualizamos un colegio que es un ecosistema de aprendizaje avanzado, reconocido por su cuerpo docente altamente especializado y por egresar bachilleres que se destacan por su sólida formación técnica, humanística y científica. Aspiramos a ser el motor de desarrollo intelectual y tecnológico de Catavi, con una infraestructura de vanguardia y un fuerte compromiso con los desafíos globales y locales del siglo XXI.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      Colegio Gran Mariscal de Ayacucho de Catavi &copy; <span id="year"></span>
+    </div>
+    <div class="footer-links">
+      <span>Zona Central, Catavi, Potosí, Bolivia</span>
+      <a href="mailto:info@colegioayacucho-catavi.edu.bo">info@colegioayacucho-catavi.edu.bo</a>
+      <span>+591 2 123 4567</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Three.js y OrbitControls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <!-- Scripts de las escenas 3D -->
+  <script src="futsal_scene.js"></script>
+  <script src="scene3d.js"></script>
+</body>
+</html>

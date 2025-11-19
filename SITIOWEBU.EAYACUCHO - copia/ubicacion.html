@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubicación — Unidad Educativa Gran Mariscal de Ayacucho de Catavi</title>
+  <meta name="description" content="Dirección, mapa y referencias para llegar al Colegio Gran Mariscal de Ayacucho de Catavi.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar" role="navigation" aria-label="Navegación principal">
+      <div class="logo">
+        <img src="imagenes/escudoayacucho-removebg-preview.png" alt="Escudo Colegio Ayacucho" />
+        <span>U.E. Ayacucho</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="materias3d.html">Materias</a></li>
+          <li><a href="infraestructura-3d.html">Infraestructura 3D</a></li>
+          <li><a href="plantel-docente.html">Plantel Docente</a></li>
+          <li><a href="ubicacion.html" aria-current="page">Ubicación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-label="Ubicación">
+      <h1>¿Dónde estamos?</h1>
+      <p>Encuentra la dirección y referencias para llegar al colegio.</p>
+    </section>
+    <section>
+      <h2>Mapa y dirección</h2>
+      <div style="text-align:center; margin-bottom:2rem;">
+        <iframe
+          src="https://www.google.com/maps?q=HCQM+QPG,+Llallagua&output=embed"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          title="Ubicación Colegio Gran Mariscal de Ayacucho de Catavi"
+          aria-label="Mapa de Google mostrando la ubicación del colegio">
+        </iframe>
+        <br>
+        <a href="https://www.google.com/maps?q=HCQM+QPG,+Llallagua" target="_blank" rel="noopener" class="btn" style="margin-top:1rem;">Cómo llegar en Google Maps</a>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Dirección</h3>
+          <p><strong>Plus Code:</strong> HCQM+QPG, Llallagua</p>
+          <p><strong>Zona:</strong> Catavi, Potosí, Bolivia</p>
+          <p><strong>Referencia:</strong> Cercano a la Plaza de Catavi</p>
+        </article>
+        <article class="card">
+          <h3>Horario de atención</h3>
+          <p>Lunes a Viernes: 08:00 – 16:00</p>
+          <p>Sábados y Domingos: Cerrado</p>
+        </article>
+        <article class="card">
+          <h3>Teléfonos y contacto</h3>
+          <p>Teléfono: +591 2 123 4567</p>
+          <p>Email: <a href="mailto:info@colegioayacucho-catavi.edu.bo">info@colegioayacucho-catavi.edu.bo</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      Colegio Gran Mariscal de Ayacucho de Catavi &copy; <span id="year"></span>
+    </div>
+    <div class="footer-links">
+      <span>Zona Central, Catavi, Potosí, Bolivia</span>
+      <a href="mailto:info@colegioayacucho-catavi.edu.bo">info@colegioayacucho-catavi.edu.bo</a>
+      <span>+591 2 123 4567</span>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
